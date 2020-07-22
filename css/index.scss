@@ -4,14 +4,7 @@
     font-family: Yu Mincho Demibold;
     src: url("../assets/fonts/yumincho.woff");
 }
-@font-face {
-    font-family: KozGoPr6;
-    src: url("../assets/fonts/KozGoPr6NRegular.woff");
-}
-@font-face {
-    font-family: Utsuki;
-    src: url("../assets/fonts/utsukushifont-webfont.woff");
-}
+
 .arrow-new-right {
     display: block;
     width: 30px;
@@ -472,6 +465,7 @@
         font-family: "Lora", serif;
         font-weight: normal;
         margin-bottom: -15px;
+        margin-left: -20px;
         span {
             color: black;
             font-size: 2rem;
@@ -483,7 +477,7 @@
     }
     .about-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         a {
             width: 24%;
@@ -529,7 +523,7 @@
         display: block;
         width: 150%;
         height: 71%;
-        transform: rotate(-7deg)
+        transform: rotate(-7deg);
     }
     h2.work-people {
         padding-top: 10.8%;
@@ -705,6 +699,8 @@
             display: block;
             font-weight: bold;
             color: black;
+            font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro",
+                "メイリオ", "ＭＳ ゴシック", sans-serif;
         }
     }
     .recruit-content {
@@ -850,6 +846,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s;
     .backTop {
         margin-top: 3px;
         width: 12px;
@@ -858,8 +855,8 @@
         border-top: 2px solid black;
         transform: rotate(45deg);
     }
-    &:hover{
-        opacity: 1!important;
+    &:hover {
+        opacity: 1 !important;
     }
 }
 @include CSSIE {
@@ -1025,7 +1022,7 @@
         }
         .about-content {
             a {
-                width: 48%;
+                width: 49%;
                 margin-bottom: 10px;
                 .details {
                     .title {
@@ -1077,6 +1074,14 @@
                 .logo-footer {
                     font-size: 0 !important;
                 }
+            }
+        }
+    }
+    .recruit {
+        h2 {
+            line-height: 40px;
+            span {
+                font-size: 1.2rem;
             }
         }
     }

@@ -1,3 +1,4 @@
+"use strict";
 $('.top-slider-main').slick({
     arrows: false,
     dots: true,
