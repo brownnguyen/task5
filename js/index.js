@@ -16,7 +16,9 @@ $('.top-slider-main').slick({
 $('.slick-interview').slick({
     autoplay: true
 });
-
+$('.special .content .img').slick({
+    autoplay: true
+});
 let header = document.querySelector('.header');
 window.onscroll = function () {
     if (window.pageYOffset > 30) {

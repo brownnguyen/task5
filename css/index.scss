@@ -629,6 +629,7 @@
                     right: 7%;
                     font-size: 2.8rem;
                     color: $blue-1;
+                    letter-spacing: 2px;
                     p.mg-more {
                         margin-top: 23px;
                     }
@@ -1013,6 +1014,7 @@
         h2.work-people {
             padding-top: 30px;
             line-height: 40px;
+            margin-left: 0;
             span {
                 font-size: 1.4rem;
             }

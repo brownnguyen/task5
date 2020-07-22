@@ -518,7 +518,8 @@
           top: 10.5%;
           right: 7%;
           font-size: 2.8rem;
-          color: #0c0c70; }
+          color: #0c0c70;
+          letter-spacing: 2px; }
           .interview .interview-content .slick-interview .content .text-right p.mg-more {
             margin-top: 23px; }
       .interview .interview-content .slick-interview .slick-arrow::before {
@@ -791,7 +792,8 @@
   .about-work-people h2.about,
   .about-work-people h2.work-people {
     padding-top: 30px;
-    line-height: 40px; }
+    line-height: 40px;
+    margin-left: 0; }
     .about-work-people h2.about span,
     .about-work-people h2.work-people span {
       font-size: 1.4rem; }
