@@ -13,6 +13,7 @@ $('.top-slider-main').slick({
 
 });
 $('.slick-interview').slick({
+    autoplay: true
 });
 
 let header = document.querySelector('.header');
@@ -24,7 +25,7 @@ window.onscroll = function () {
         header.classList.remove('stick')
     }
     if (window.pageYOffset > window.innerHeight / 2) {
-        document.querySelector('#backTop').style.opacity = 1;
+        document.querySelector('#backTop').style.opacity = 0.8;
         document.querySelector('#backTop').style.visibility = "visible"
     }
     else {
@@ -54,10 +55,12 @@ btnRight.classList.add("arrow-new-right")
 slickRight.appendChild(btnRight);
 let dataUl = document.querySelectorAll('.ul-main');
 let contentHeadUl = document.querySelectorAll('.content.head-ul');
-for (let i = 0; i < contentHeadUl.length; i++) {
-    contentHeadUl[i].onclick = function () {
+let titleUl = document.querySelectorAll('.title.title-ul');
+for (let i = 0; i < dataUl.length; i++) {
+    titleUl[i].onclick = function () {
         for (let k = 0; k < dataUl.length; k++) {
             dataUl[k].style.height = 0;
+            dataUl[k].classList.remove('expand');
         }
         dataUl[i].classList.toggle('expand');
         if (dataUl[i].classList.contains('expand')) {
