@@ -523,24 +523,20 @@
         content: "";
         position: absolute;
         z-index: -1;
-        top: 96px;
+        top: 12%;
         left: -21%;
         background-color: #eeeeee;
         display: block;
         width: 150%;
-        height: 77%;
-        transform: rotate(-8deg);
-        -webkit-transform: rotate(-6deg);
-        -moz-transform: rotate(-8deg);
-        -ms-transform: rotate(-8deg);
-        -o-transform: rotate(-8deg);
+        height: 71%;
+        transform: rotate(-7deg)
     }
     h2.work-people {
         padding-top: 10.8%;
         padding-bottom: 5%;
         font-family: "Lora", serif;
         .connect {
-            font-family: "Utsuki";
+            font-family: "Lora", serif;
             font-size: 6rem;
             display: inline-block;
             font-weight: normal;
