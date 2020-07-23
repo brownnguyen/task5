@@ -540,9 +540,10 @@
     }
 }
 .interview {
-    background-image: url("../images/bg-people.jpg");
-    background-size: cover;
+    // background-image: url("../images/bg-people.jpg");
+    // background-size: cover;
     margin-top: 7.2%;
+    position: relative;
     .interview-content {
         display: flex;
         justify-content: space-between;
@@ -601,6 +602,7 @@
             margin-bottom: 5.5%;
             .content {
                 position: relative;
+                background-color: $bg-grey-1;
                 width: 100%;
                 .img {
                     width: 100%;
@@ -643,6 +645,39 @@
             }
             .slick-prev {
                 left: -35px;
+            }
+        }
+    }
+    .slide-bg {
+        &:after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, $line-blue-1, $line-blue-2);
+        }
+        .slide-bg-content {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .slick-list {
+                height: 100%;
+                padding: 0 !important;
+            }
+            .content2 {
+                width: 100%;
+                min-height: 510px;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -872,6 +907,9 @@
                 }
             }
         }
+    }
+    .top-slider .content .text .btn-slide span {
+        padding-top: 7px;
     }
     .btn-right-head .btn-page,
     .btn-right-head .entry-head {
@@ -1262,7 +1300,7 @@
             .slick-interview {
                 .content {
                     .text-left {
-                        bottom: 31%;
+                        bottom: 3%;
                         left: 3.5%;
                         h3 {
                             font-size: 1.2rem;
@@ -1275,6 +1313,11 @@
                         }
                     }
                 }
+            }
+        }
+        .slide-bg {
+            .slide-bg-content {
+                top: 27%;
             }
         }
     }

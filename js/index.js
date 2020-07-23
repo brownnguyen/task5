@@ -14,7 +14,18 @@ $('.top-slider-main').slick({
 
 });
 $('.slick-interview').slick({
-    autoplay: true
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    asNavFor: '.slide-bg-content'
+});
+$('.slide-bg-content').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slick-interview',
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: false
 });
 $('.special .content .img').slick({
     autoplay: true
