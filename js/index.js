@@ -16,7 +16,7 @@ $('.top-slider-main').slick({
 $('.slick-interview').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     asNavFor: '.slide-bg-content'
 });
 $('.slide-bg-content').slick({
