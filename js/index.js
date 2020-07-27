@@ -16,7 +16,7 @@ $('.top-slider-main').slick({
 $('.slick-interview').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     asNavFor: '.slide-bg-content'
 });
 $('.slide-bg-content').slick({
@@ -58,15 +58,7 @@ navBtn.onclick = function () {
         drawer.classList.remove("expand")
     }
 }
-let slickLeft = document.querySelector('.interview .slick-prev');
-let btnLeft = document.createElement('span');
-btnLeft.classList.add('arrow-new-left');
-slickLeft.appendChild(btnLeft);
 
-let slickRight = document.querySelector('.interview .slick-next');
-let btnRight = document.querySelector('span');
-btnRight.classList.add("arrow-new-right")
-slickRight.appendChild(btnRight);
 let dataUl = document.querySelectorAll('.ul-main');
 let contentHeadUl = document.querySelectorAll('.content.head-ul');
 let titleUl = document.querySelectorAll('.title.title-ul');
@@ -89,6 +81,18 @@ for (let i = 0; i < dataUl.length; i++) {
         }
     }
 }
+
+
+let slickLeft = document.querySelector('.interview .slick-prev');
+let btnLeft = document.createElement('span');
+btnLeft.classList.add('arrow-new-left');
+slickLeft.appendChild(btnLeft);
+
+let slickRight = document.querySelector('.interview .slick-next');
+let btnRight = document.querySelector('span');
+btnRight.classList.add("arrow-new-right")
+slickRight.appendChild(btnRight);
+
 
 $('#backTop').click(function (event) {
     $('html,body').animate({
